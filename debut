@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Raphaël SANIEZ — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Portfolio de Raphaël SANIEZ — Terminale Pro CIEL. Réseau, maintenance, cybersécurité." />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1>Raphaël <span>SANIEZ</span></h1>
+        <p class="tagline">Passionné par l'informatique — réseau, maintenance & cybersécurité</p>
+      </div>
+      <nav class="nav">
+        <a href="#about">Parcours</a>
+        <a href="#projects">Projets</a>
+        <a href="#skills">Compétences</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="menu-toggle" aria-label="menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h2>Salut — moi c'est Raphaël</h2>
+          <p class="lead">Je suis en <strong>Terminale Pro CIEL</strong> au Lycée de la Méditerranée. J'aime tout ce qui touche au réseau, à la maintenance et à la cybersécurité. Je veux intégrer <strong>YNOV Aix</strong> pour me spécialiser et progresser rapidement.</p>
+          <p>
+            <a class="btn" href="#projects">Voir mes projets</a>
+            <a class="btn outline" href="cv.pdf" target="_blank" rel="noopener">Télécharger mon CV</a>
+          </p>
+        </div>
+        <div class="hero-photo">
+          <img src="photo.jpg" alt="Photo Raphaël SANIEZ" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT / PARCOURS -->
+    <section id="about" class="section">
+      <div class="container">
+        <h3>Parcours & Formation</h3>
+        <p><strong>Lycée :</strong> Lycée de la Méditerranée — <strong>Terminale Pro CIEL</strong></p>
+        <p>Nous travaillons sur les bases de la cybersécurité, la mise en place de serveurs, et la maintenance informatique. J'ai aussi réalisé des missions en entreprise en alternance/stage qui m'ont donné une première expérience terrain.</p>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section alt">
+      <div class="container">
+        <h3>Projets</h3>
+        <div class="projects-grid">
+          <article class="project-card">
+            <h4>Concours PassTonHack</h4>
+            <p><em>Participation collective avec la classe.</em></p>
+            <p><strong>À compléter :</strong> description de la mission, ton rôle, outils utilisés, et ce que tu as appris.</p>
+          </article>
+
+          <article class="project-card">
+            <h4>Concours Yes We Code</h4>
+            <p><em>Challenge / atelier de code.</em></p>
+            <p><strong>À compléter :</strong> expliquer le challenge, technologies, et ton apport.</p>
+          </article>
+
+          <article class="project-card">
+            <h4>Alternance / Stage</h4>
+            <p><em>Nom de l'entreprise — missions réalisées.</em></p>
+            <p><strong>À compléter :</strong> installer un réseau local, maintenance, sauvegarde de données, etc.</p>
+          </article>
+        </div>
+        <p class="small">Tu peux ajouter une image/capture pour chaque projet (screenshot, photo du câblage, schéma réseau).</p>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h3>Compétences</h3>
+        <div class="skills-grid">
+          <div class="skill">
+            <h5>Réseau</h5>
+            <p>Adressage IP, câblage RJ45, configuration basique de switch/routeur</p>
+          </div>
+          <div class="skill">
+            <h5>Système</h5>
+            <p>Windows (installation, maintenance, gestion utilisateurs)</p>
+          </div>
+          <div class="skill">
+            <h5>Cybersécurité</h5>
+            <p>Bases en sécurité, bonnes pratiques, sauvegarde et gestion des comptes</p>
+          </div>
+          <div class="skill">
+            <h5>Bureautique</h5>
+            <p>Word, Excel, Outlook — documentation & exportations</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OBJECTIVE / WHY YNOV -->
+    <section id="why" class="section alt">
+      <div class="container">
+        <h3>Pourquoi YNOV ?</h3>
+        <p>Je souhaite intégrer YNOV Aix pour approfondir mes compétences en cybersécurité et administration réseau, et évoluer vers des missions techniques en entreprise. J'apprécie l'approche pratique et les projets concrets proposés par l'école.</p>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h3>Contact</h3>
+        <p>Mail : <strong>ton.email@example.com</strong> (remplace par ton adresse)</p>
+        <p>GitHub : <strong>github.com/tonpseudo</strong> — LinkedIn : <strong>linkedin.com/in/tonpseudo</strong> (optionnel)</p>
+        <p class="small">Merci d'avoir regardé mon portfolio — disponible en entretien si vous souhaitez des détails sur mes projets.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© Raphaël SANIEZ — Terminale Pro CIEL — Lycée de la Méditerranée</p>
+    </div>
+  </footer>
+
+  <script>
+    // menu toggle simple
+    const btn = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav');
+    btn.addEventListener('click', () => nav.classList.toggle('open'));
+  </script>
+</body>
+</html>
