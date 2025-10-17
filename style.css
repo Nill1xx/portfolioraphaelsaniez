@@ -1,47 +1,108 @@
-:root{
-  --bg:#0f1724;
-  --card:#0b1220;
-  --text:#e6eef8;
-  --muted:#9fb0c6;
-  --accent:#3db6ff;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-*{box-sizing:border-box}
-body{margin:0;font-family:Inter,system-ui,Arial,sans-serif;background:linear-gradient(180deg,#071022 0%, #071732 100%);color:var(--text);-webkit-font-smoothing:antialiased}
-.container{max-width:1000px;margin:0 auto;padding:28px}
-.site-header{background:transparent;padding:12px 0;position:sticky;top:0;z-index:60}
-.header-inner{display:flex;align-items:center;justify-content:space-between}
-.brand h1{margin:0;font-size:20px}
-.brand h1 span{color:var(--accent)}
-.tagline{margin:4px 0 0;font-size:12px;color:var(--muted)}
-.nav{display:flex;gap:16px}
-.nav a{color:var(--muted);text-decoration:none;font-size:14px}
-.menu-toggle{display:none;background:none;border:0;color:var(--text);font-size:22px}
 
-/* HERO */
-.hero{padding:40px 0}
-.hero-grid{display:grid;grid-template-columns:1fr 280px;gap:24px;align-items:center}
-.lead{font-size:16px;color:var(--text);margin-bottom:18px}
-.hero-photo img{width:100%;max-width:260px;border-radius:8px;display:block;box-shadow:0 8px 24px rgba(0,0,0,.6)}
-.btn{display:inline-block;padding:10px 14px;border-radius:8px;background:var(--accent);color:#052033;text-decoration:none;font-weight:600;margin-right:8px}
-.btn.outline{background:transparent;border:1px solid rgba(255,255,255,.08);color:var(--text)}
-
-/* sections */
-.section{padding:40px 0}
-.section.alt{background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent)}
-h3{margin-top:0}
-.projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:16px}
-.project-card{background:rgba(255,255,255,0.03);padding:14px;border-radius:8px;border:1px solid rgba(255,255,255,0.03)}
-.skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-top:14px}
-.skill{background:rgba(255,255,255,0.02);padding:10px;border-radius:6px;border:1px solid rgba(255,255,255,0.02)}
-
-/* footer */
-.site-footer{padding:18px 0;color:var(--muted);text-align:center;font-size:13px;border-top:1px solid rgba(255,255,255,0.03)}
-
-/* responsive */
-@media (max-width:800px){
-  .hero-grid{grid-template-columns:1fr}
-  .nav{position:absolute;right:18px;top:72px;background:rgba(3,6,12,.8);padding:12px;border-radius:8px;flex-direction:column;display:none}
-  .nav.open{display:flex}
-  .menu-toggle{display:block}
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0b0f19;
+  color: #e5e5e5;
+  line-height: 1.6;
+  scroll-behavior: smooth;
 }
-.small{font-size:13px;color:var(--muted)}
+
+/* HEADER */
+header {
+  text-align: center;
+  padding: 80px 20px;
+  background: radial-gradient(circle at top, #0078ff, #0b0f19 80%);
+  color: white;
+  box-shadow: 0 0 20px #0078ff;
+}
+
+h1 {
+  font-size: 3em;
+  letter-spacing: 1px;
+  text-shadow: 0 0 10px #00c6ff;
+}
+
+header p {
+  font-size: 1.2em;
+  margin-top: 10px;
+  color: #cde8ff;
+}
+
+/* SECTIONS */
+section {
+  max-width: 900px;
+  margin: 60px auto;
+  background: #101522;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 120, 255, 0.1);
+  border: 1px solid rgba(0, 120, 255, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+section:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 25px rgba(0, 200, 255, 0.2);
+}
+
+h2 {
+  color: #00c6ff;
+  margin-bottom: 10px;
+  border-left: 4px solid #00c6ff;
+  padding-left: 10px;
+  font-weight: 600;
+}
+
+ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+li {
+  background: #151b2d;
+  margin: 8px 0;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border-left: 3px solid #00c6ff;
+  transition: background 0.3s;
+}
+
+li:hover {
+  background: rgba(0, 198, 255, 0.1);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #888;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  margin-top: 40px;
+}
+
+/* BOUTON RETOUR HAUT */
+#backToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #0078ff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #00c6ff;
+  transition: all 0.3s;
+}
+
+#backToTop:hover {
+  background-color: #00c6ff;
+  box-shadow: 0 0 20px #00c6ff;
+}
